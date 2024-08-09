@@ -18,12 +18,14 @@ const SingleArticle = () => {
 
   return (
     <>
-      <h2>{title}</h2>
-      <img src={article_img_url} alt={`Image relating to ${topic}.`} />
-      <h3>{topic}</h3>
-      <h4>Fibs fabricated by: {author}</h4>
-      <p>{body}</p>
-      <p>Support for this lie: {votes}</p>
+      <div className="single-article">
+        <h2>{title}</h2>
+        <img src={article_img_url} alt={`Image relating to ${topic}.`} />
+        <h4>Category: {topic}</h4>
+        <h4>Fibs fabricated by: {author}</h4>
+        <p>{body}</p>
+        <p>Support for this lie: {votes}</p>
+      </div>
     </>
   );
 };
