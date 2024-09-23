@@ -14,7 +14,8 @@ function ArticleCard({ articles }) {
               >
                 <img
                   src={article.article_img_url}
-                  ClassName="article-card-img"
+                  key={article.article_img_url}
+                  className="article-card-img"
                 />
                 <li>
                   <h3>{article.title}</h3>
