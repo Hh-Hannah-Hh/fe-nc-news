@@ -1,6 +1,6 @@
 function Loading() {
   return (
-    <div class="loading">
+    <div className="loading">
       <h3>Making up some fake news...</h3>
     </div>
   );

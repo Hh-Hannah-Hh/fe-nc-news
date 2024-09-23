@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Loading from "../Components/Loading";
 import ArticleCard from "../Components/ArticleCard";
-import { getArticles } from "../Components/apiRequests";
+import { getArticles, getArticleComments } from "../Components/apiRequests";
 
 const ArticlesList = () => {
   const [articles, setArticles] = useState([]);
@@ -18,7 +18,7 @@ const ArticlesList = () => {
     return <Loading />;
   } else {
     return (
-      <div id="latest-articles" ClassName="background-body">
+      <div id="latest-articles" className="background-body">
         <h2>Latest Lies</h2>
         <ArticleCard articles={articles} />;
       </div>
